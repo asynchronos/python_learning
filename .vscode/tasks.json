@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "pipInstall",
+        "type": "shell",
+        "osx": {
+          "command": "${config:python.venvPath}/bin/python -m pip install -r requirements.txt"
+        },
+        "windows": {
+          "command": "${config:python.venvPath}/Scripts/python -m pip install -r requirements.txt"
+        },
+        "linux": {
+          "command": "${config:python.venvPath}/bin/python -m pip install -r requirements.txt"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+  
