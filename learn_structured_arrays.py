@@ -20,6 +20,10 @@ def print_students():
     print(f"data of student has marks<50: {a[a['marks']<=50]}")
     print(f"name of student has age<20: {a[a['age']<20]['name']}")
 
+    stu_marks50plus = a[a['marks']>50]
+    print(f"name of student has mark>50 and age<20: " + \
+        f"{stu_marks50plus[stu_marks50plus['age']<20]['name']}")
+
     pass
 
 print_students()
